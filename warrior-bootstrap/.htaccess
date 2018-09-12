@@ -1,0 +1,110 @@
+# $Id$
+#
+# This is used with Apache WebServers
+#
+# For this to work, you must include the parameter 'Options' to
+# the AllowOverride configuration
+#
+# Example:
+#
+# <Directory "/usr/local/apache/htdocs">
+#   AllowOverride Options
+# </Directory>
+#
+# 'All' with also work. (This configuration is in the
+# apache/conf/httpd.conf file)
+
+# The following makes adjustments to the SSL protocol for Internet
+# Explorer browsers
+
+#<IfModule mod_setenvif.c>
+#  <IfDefine SSL>
+#    SetEnvIf User-Agent ".*MSIE.*" \
+#             nokeepalive ssl-unclean-shutdown \
+#             downgrade-1.0 force-response-1.0
+#  </IfDefine>
+#</IfModule>
+
+# If Search Engine Friendly URLs do not work, try enabling the
+# following Apache configuration parameter
+
+# AcceptPathInfo On
+
+# Fix certain PHP values
+# (commented out by default to prevent errors occuring on certain
+# servers)
+
+
+
+# php_value session.use_trans_sid 0
+# php_value register_globals 1
+Options +FollowSymlinks
+RewriteEngine on
+rewritecond %{http_host} ^airsoft-warrior.com [nc]
+rewriterule ^(.*)$ https://www.airsoft-warrior.com/$1 [r=301,nc] 
+
+# Begin Ultimate SEO V2.2d 
+Options +FollowSymLinks
+RewriteEngine On 
+
+  # RewriteBase instructions 
+  # Change RewriteBase dependent on how your shop is accessed as below. 
+  # http://www.mysite.com = RewriteBase / 
+  # http://www.mysite.com/catalog/ = RewriteBase /catalog/  
+  # http://www.mysite.com/catalog/shop/ = RewriteBase /catalog/shop/ 
+
+  # Change the following line using the instructions above  
+  
+RewriteBase /
+
+RewriteRule ^(.*)-p-(.*).html$ product_info.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-c-(.*).html$ index.php?cPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-m-(.*).html$ index.php?manufacturers_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pi-(.*).html$ popup_image.php?pID=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-by-(.*).html$ all-products.php?fl=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-t-(.*).html$ articles.php?tPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-a-(.*).html$ article_info.php?articles_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-au-(.*).html$ articles.php?authors_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pr-(.*).html$ product_reviews.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pri-(.*).html$ product_reviews_info.php?products_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-f-(.*).html$ faqdesk_info.php?faqdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-fc-(.*).html$ faqdesk_index.php?faqPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-fri-(.*).html$ faqdesk_reviews_info.php?faqdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-fra-(.*).html$ faqdesk_reviews_article.php?faqdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-i-(.*).html$ information.php?info_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-links-(.*).html$ links.php?lPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-pm-([0-9]+).html$ info_pages.php?pages_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-n-(.*).html$ newsdesk_info.php?newsdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-nc-(.*).html$ newsdesk_index.php?newsPath=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-nri-(.*).html$ newsdesk_reviews_info.php?newsdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-nra-(.*).html$ newsdesk_reviews_article.php?newsdesk_id=$2&%{QUERY_STRING}
+RewriteRule ^(.*)-po-([0-9]+).html$ pollbooth.php?pollid=$2&%{QUERY_STRING}
+# End Ultimate SEO V2.2d
+
+
+<IfModule mod_expires.c>
+	<FilesMatch "\.(gif|jpg|jpeg|png|swf|css|js|html?|xml|txt|ico)$">
+		ExpiresActive On
+		ExpiresDefault "access plus 10 years"
+	</FilesMatch>
+</IfModule>
+<IfModule mod_rewrite.c>
+
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*\.(js|css))$ smartoptimizer/?$1
+	
+	<IfModule mod_expires.c>
+		RewriteCond %{REQUEST_FILENAME} -f
+		RewriteRule ^(.*\.(js|css|html?|xml|txt))$ smartoptimizer/?$1
+	</IfModule>
+
+	<IfModule !mod_expires.c>
+		RewriteCond %{REQUEST_FILENAME} -f
+		RewriteRule ^(.*\.(gif|jpg|jpeg|png|swf|css|js|html?|xml|txt|ico))$ smartoptimizer/?$1
+	</IfModule>
+</IfModule>
+<FilesMatch "\.(gif|jpg|jpeg|png|swf|css|js|html?|xml|txt|ico)$">
+	FileETag none
+</FilesMatch>

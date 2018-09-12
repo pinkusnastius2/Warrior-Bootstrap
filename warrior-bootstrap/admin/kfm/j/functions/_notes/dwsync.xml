@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="kdnd_dragFinish.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kdnd_makeDraggable.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kdnd_unmakeDraggable.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_closeContextMenu.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_createContextMenu.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_createEmptyFile.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_deleteFile.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_deleteFiles.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_deleteSelectedFiles.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_downloadFileFromUrl.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_downloadSelectedFiles.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_downloadSelectedFiles_addIframe.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_extractZippedFile.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_files_dragToDirectory.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_leftColumn_disable.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_leftColumn_enable.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_modal_close.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_modal_open.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_removeFilesFromView.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_renameFile.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_renameFiles.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler_add.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler_addMaxWidth.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler_remove.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler_removeMaxHeight.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_resizeHandler_removeMaxWidth.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_runSearch2.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_selection_dragFinish.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_showMessage.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_showToolTip.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+<file name="kfm_zip.js" server="www.bb-gunshop.co.uk/warrior-bootstrap/" local="130630660200000000" remote="130630660200000000" />
+</dwsync>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access to /warrior-bootstrap/admin"
+AuthUserFile /kunden/homepages/43/d476865756/htpasswd
+Require user J4MP3R_Admin_bbgun

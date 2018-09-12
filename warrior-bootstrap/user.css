@@ -1,0 +1,86 @@
+<?php
+ob_start ("ob_gzhandler");
+header("Content-type: text/css; charset: UTF-8");
+header("Cache-Control: must-revalidate");
+$offset = 60 * 60 ;
+$ExpStr = "Expires: " .
+gmdate("D, d M Y H:i:s",
+time() + $offset) . " GMT";
+header($ExpStr);
+?>
+/* user.css ----------------------------------------------------------------- */
+
+.sub_cat{
+	margin-left:15px;
+}
+.sub_sub_cat{
+	margin-left:30px;
+}
+.footer_divider{
+	border-top:1px solid #333;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+.footer_manu_logo{
+	opacity:0.5;	
+}
+.footer_manu_logo:hover{
+	opacity:1;	
+	border: 2px solid #068ddd;
+}
+
+.top-spacer{ 
+	background-color:#000000;
+}
+.top-search{
+	
+	padding-top:55px;
+}
+.top-breadcrumb{
+	padding-top:65px;
+}
+
+.jax-go{
+	color:#F810CF;
+	font-weight:bold;	
+}
+#bodyContent{
+	background: #FFFFFF;
+}
+.caption{
+	color:#068ddd;	
+}
+panel-side > .panel-heading a{
+	color:#9d9d9d;	
+}
+.panel-body a{
+	color: #068ddd;	
+}
+
+panel-side > .panel-heading a:hover{
+	color:#068ddd;	
+}
+
+.special-price{
+	color:#aa0202;	
+}
+
+.btn-text-footer{
+	color: #FFFFFF;
+}
+.blue-span{
+	color:#068ddd;	
+	font-weight:bold;
+}
+.productSpecialPrice{
+	content: "Now Only ";
+	color: #068ddd;
+	font-size:16px;
+	font-weight: bold;	
+}
+.productpageSpecialPrice{
+	content: "Now Only ";
+	color: #068ddd;
+
+	font-weight: bold;	
+}
